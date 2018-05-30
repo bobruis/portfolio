@@ -1,0 +1,214 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color:white;
+	display: block
+}
+
+p{
+	font-size: 18px; 
+}
+header{
+	height: 100px;
+
+	text-align: center;
+
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+main{
+    width: 100%;
+    height: 100%;
+
+
+    background-color: blue;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+figure{
+	width: 50%;
+    height: 250px;
+    margin: 0;
+
+    text-align: center;
+    font-size: 25px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+	background-color: black;
+	width: 100%;
+	height: 50px;
+}
+
+	main.home{
+		
+		height: auto;
+
+		background: unset;
+	    
+	    display: flex;
+	    flex-direction: inherit; 
+	    flex-wrap: wrap;
+	}
+
+	.aboutMe{ padding: 0 5% 0 5%;}
+
+	.aboutMe, .profilePicture{
+		width: 100%;
+	    height: auto;
+	    margin: 0;
+
+	    display: flex;
+	    justify-content: space-around;
+	    align-items: center;
+	}	
+
+	.picture{
+		width:400px;
+		height: 100%;
+	}
+
+	.blockOne, .blockTwo{
+		background-color: #d93434;
+		width: 100%;
+		height: 250px;
+		color: white;
+	}
+
+.blockTwo{ background-color: #da5050; }
+.optionZero{background-color: #7750da;}
+.optionOne{background-color: #da5050;}
+.optionTwo{background-color: #cbda50;}
+.optionThree{background-color: #50da63;}
+.optionFour{background-color: #50b1da;}
+
+@media (min-width: 768px) {
+	main{
+	    width: 100%;
+	    height: 100%;
+
+	    background-color: blue;
+	    
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	}
+
+	figure{
+		width: 25%;
+	    height: 200px;
+	    margin: 0;
+
+	    text-align: center;
+	    font-size: 25px;
+	    color: white;
+
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}	
+
+
+	main.home{
+		
+		height: auto;
+
+		background: unset;
+	    
+	    display: flex;
+
+	}
+
+	.aboutMe{ padding: 0 1% 0 1%; width: 53%;}
+	.profilePicture{width: 45%;}
+
+	.aboutMe, .profilePicture{
+
+	    height: auto;
+	    margin: 0;
+
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}	
+
+	.picture{
+		width:	375px;
+		height: 100%;
+	}
+
+	.blockOne, .blockTwo{
+		background-color: #d93434;
+		width: 100%;
+		height: 250px;
+		color: white;
+		margin-top: 1%;
+	}
+
+
+}
+
+@media (min-width: 1280px) {
+	p{
+		font-size: 22px;
+		padding: 0 5% 0 5%;
+	}
+
+	main{
+	    width: 100%;
+	    height: 275px;
+
+	    background-color: blue;
+	    
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	}
+
+	main.home{
+		width: 100%;
+		height: auto;
+
+		background: unset;
+	    
+	    display: flex;
+	    flex-direction: row; 
+	    flex-wrap: wrap;
+	}
+
+	.picture{
+		width:420px;
+		height: 100%;
+	}
+
+	.aboutMe{ padding: 0 1% 0 1%; width: 53%;}
+	.profilePicture{width: 45%;}
+
+	.aboutMe, .profilePicture{
+
+	    height: auto;
+	    margin: 0;
+
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}	
+
+	.profilePicture{
+		justify-content: flex-end;
+	}
+}
