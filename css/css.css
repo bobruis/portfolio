@@ -1,7 +1,8 @@
 *{
 	margin:0;
 	padding: 0;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Arimo', sans-serif;
+	font-size: 13px;
 }
 
 a{
@@ -9,10 +10,10 @@ a{
 	color:white;
 	display: block
 }
-
 p{
-	font-size: 18px; 
+	padding-top: 5%;
 }
+
 header{
 	height: 100px;
 
@@ -25,15 +26,31 @@ header{
 main{
     width: 100%;
     height: 100%;
-
-
-    background-color: blue;
     
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+section.excursion{
+	flex-direction: column;
+}
+
+section{
+	display: flex;
+	width: 100%;
+    padding-top: 2%;
+    color: white;
+    background-color:  #F2F2F2;
+    margin-top: 0%;
+}
+
+article{
+	background-color: #06425C;
+	margin: 1%;
+	padding: 1%;
+
+}
 figure{
 	width: 50%;
     height: 250px;
@@ -48,34 +65,72 @@ figure{
     align-items: center;
 }
 
+
+figure.bewijsPhoto{
+  	width: auto !important;
+    height: auto; 
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+	width: inherit;
+}
+
+figure.picture_unity, figure.picture_progresion{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.unityAssignments, section.cvAssignments{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+article.unity, article.progression{
+	width: 100%;
+}
+
 footer{
 	background-color: black;
 	width: 100%;
 	height: 50px;
 }
 
-	main.home{
-		
-		height: auto;
+main.home{
+	
+	height: auto;
 
-		background: unset;
-	    
-	    display: flex;
-	    flex-direction: inherit; 
-	    flex-wrap: wrap;
-	}
+	background: unset;
+    
+    display: flex;
+    flex-direction: inherit; 
+    flex-wrap: wrap;
+}
 
-	.aboutMe{ padding: 0 5% 0 5%;}
+.aboutMe{ padding: 0 5% 0 5%;}
 
-	.aboutMe, .profilePicture{
-		width: 100%;
-	    height: auto;
-	    margin: 0;
+.aboutMe, .profilePicture{
+	width: 100%;
+    height: auto;
+    margin: 0;
 
-	    display: flex;
-	    justify-content: space-around;
-	    align-items: center;
-	}	
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}	
 
 	.picture{
 		width:400px;
@@ -97,40 +152,88 @@ footer{
 .optionFour{background-color: #50b1da;}
 
 @media (min-width: 768px) {
+		p{
+		font-size: 15px;
+		padding: 3% 5% 0 0%;
+		color: white;
+	}
+
 	main{
 	    width: 100%;
 	    height: 100%;
-
-	    background-color: blue;
-	    
+   
 	    display: flex;
 	    flex-direction: row;
 	    flex-wrap: wrap;
 	}
 
+	section.excursion{
+		flex-direction: inherit;
+	}
+
 	figure{
-		width: 25%;
+		width: auto;
 	    height: 200px;
 	    margin: 0;
 
 	    text-align: center;
-	    font-size: 25px;
 	    color: white;
 
 	    display: flex;
 	    justify-content: center;
 	    align-items: center;
+	}
+
+	figure.bewijsPhoto{
+		height:auto;
 	}	
 
+	.optionOne, .optionTwo, .optionThree, .optionFour{
 
-	main.home{
-		
+	width: 50%;
+    height: 250px;
+    margin: 0;
+
+    text-align: center;
+    font-size: 25px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+	}
+	main.home{		
 		height: auto;
-
 		background: unset;
-	    
 	    display: flex;
+	}
 
+		img.pictures{
+		width: 100%;
+		height: auto;
+	}
+	section.cvAssignments, section.unityAssignments{
+	    width: 100%;
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	}
+	article.progression, article.unity{
+		width: 46%;
+	}
+	article{
+		margin: 1%;
+		padding: 1%;
+	}
+
+	article.excursionT{
+		width: 80%;
+		font-size: 16;
+	}
+	
+	article.photo{
+    	width: 20%;
 	}
 
 	.aboutMe{ padding: 0 1% 0 1%; width: 53%;}
@@ -159,20 +262,57 @@ footer{
 		margin-top: 1%;
 	}
 
+	video{
+		width: 350px;
+	}
 
 }
 
 @media (min-width: 1280px) {
+
 	p{
-		font-size: 22px;
-		padding: 0 5% 0 5%;
+		padding: 1% 0 0 0 ;
+	}
+	header{
+	justify-content: space-between;
+	padding-left: 1%;
+    padding-right: 1%;
+	}	
+
+	.back,.titlePage{
+		color: black !important;
+		font-size: 40px;
 	}
 
+	.about, .HCIbig{
+		font-size: 40px;
+	}
+	a.back{
+		color: lightgreen;
+	}
+	.titlePage, .HCIbig{
+		padding: unset;
+	}
+	p, i,{
+		font-size: 18px;
+		padding: 3% 5% 0 0%;
+		color: white;
+	}
+
+	 ul, li{
+	 	font-size: 18px;
+	 	padding-left: 17px;
+	 }
+
+	a.link{
+		font-size: 18px;
+		color: pink;
+	}
 	main{
 	    width: 100%;
-	    height: 275px;
+	    height: auto;
+	    background-color:unset;
 
-	    background-color: blue;
 	    
 	    display: flex;
 	    flex-direction: row;
@@ -189,17 +329,38 @@ footer{
 	    flex-direction: row; 
 	    flex-wrap: wrap;
 	}
-
+	.optionOne,
+	.optionTwo,
+	.optionThree,
+	.optionFour{
+		height: auto;
+	}
 	.picture{
 		width:420px;
 		height: 100%;
 	}
 
-	.aboutMe{ padding: 0 1% 0 1%; width: 53%;}
-	.profilePicture{width: 45%;}
+	.blockOne, .blockTwo{
+		background-color: #d93434;
+		width: 46%;
+		height: 250px;
+		color: white;
+		margin-left: 0%;
+	}
+
+	.blockTwo{
+		margin-left: 2%	;
+	}
+
+
+	.aboutMe{
+		padding: 0px 0% 0 1%;
+    	width: 80%;
+	}
+
+	.profilePicture{width: 18%;}
 
 	.aboutMe, .profilePicture{
-
 	    height: auto;
 	    margin: 0;
 
@@ -211,4 +372,168 @@ footer{
 	.profilePicture{
 		justify-content: flex-end;
 	}
+
+	section{
+		margin-top: unset;
+		padding: unset;
+		background-color:  #F2F2F2;
+	}
+
+	section.arvrAssignments, section.EGAssignments, section.ARassignments{
+		width: 100%;
+	}
+
+	section.excursion{
+		flex-direction: inherit;
+	}
+
+
+	section.arduinoAssignments{
+	    display: flex;
+	    width: 100%;
+	    flex-direction: row;
+	    padding-top: 2%;
+	    color: white;
+	    background-color: #F2F2F2;
+	    margin-top: 0%;
+	    height: auto;
+	    flex-flow: wrap;
+	}
+
+
+	section.labWeeksOne ,.labWeeksTwo{
+		flex-direction: row;
+   		flex-flow: wrap;
+	}
+	article{
+		width: 50%;
+		background-color: #06425C;
+	}
+
+	article.assignmentEG{
+		width: 100%;
+	}
+
+	article.excursionT{
+		width: 65%;
+		font-size: 18px;
+	}
+
+	article.arduino{
+	    width: 46%;
+    	height: auto;
+	}
+	
+	article.photo{
+    	width: 10%;
+	}
+
+	article.day{
+		width: 46%;
+		min-height: 250px;
+	}
+
+	.optionOne, .optionTwo, .optionThree, .optionFour{
+		width: 50%;
+	    height: 500px;
+	    margin: 0;
+
+	    text-align: center;
+	    font-size: 50px !important;
+	    color: white;
+
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.arduinoLink{
+		width: 100% !important;
+	}
+
+	.optionOne> a, .optionTwo> a, .optionThree> a, .optionFour > a{
+		font-size: 40px;
+	}
+	figure{
+		width: auto;
+	    margin: 0;
+	    text-align: center;
+	    color: white;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	figure.picture_arvr{
+	    width: 100%;
+	    margin: 0;
+	    text-align: center;
+	    color: white;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    height: 350px;
+	}
+	figure.bewijsPhoto{
+		height:auto;
+	}
+
+	figure.optionOne
+	img.pictures{
+		width: 100%;
+		height: auto;
+	}
+
+
+	img.ar{
+		display: block;
+		width: 80% !important;
+	    height: 350px;
+	    margin-top: 25px;
+	}
+
+	img.bewijs{
+	    max-height: 550px;
+    	overflow: hidden;
+	}
+
+
+	a.link{
+		color: lightgreen;
+	}
+	article.tt{
+		min-width:50%;
+}
+	.a{
+		  
+    width: 50%;
+        float: left;
+    min-width: 50%;
+	}
+
+	video{
+	    width: 100%;
+    	height: 500px;
+	}
+
+	video.arduinoVideo{
+		width: 320px;
+		height: 240px;
+	}
+	article.day{
+		width: 46%;
+    	height:auto;
+	}
+	.labweeks{
+		justify-content: flex-start;
+		height:auto;
+	}
+	.photoHCI{
+		width: 30%;
+    	height: 300px;
+    	margin-top: 1%;
+	}
+
+
+
 }
